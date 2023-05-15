@@ -1,0 +1,187 @@
+@import url('https://fonts.cdnfonts.com/css/raleway-5');
+:root{
+    background-color: #353a64;
+    font-family: 'Raleway', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+#user-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#user-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-inline: 6px;
+}
+
+header div #logoutBtn{
+    width: auto;
+    padding-inline: 10px;
+    background-color: #559FFF;
+    font-size: 18px;
+    border: none;
+    transition: background-color .3s ease-in-out;
+}
+#logoutBtn:hover{
+    background-color: #3381d0;
+}
+
+
+h1{
+    font-size: 3rem;
+    color: #fff;
+ }
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+ }
+.flex-column{
+    display: flex;
+    flex-direction:column;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.flex-center{
+    justify-content: center;
+    align-items:center;
+}
+@import url('https://fonts.cdnfonts.com/css/cuprum');
+.btn{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #FFF;
+    background-color: #0093E9;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #3381d0;
+    transform: scale(1.03);
+    transition: transform 150ms;
+}
+.fa-house{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+.fa-face-frown{
+    font-size: 2rem;
+}
+.fa-face-smile {
+    font-size: 2rem;
+}
+.goHome{
+    background: linear-gradient(89.9deg, rgb(255, 90, 109) 2.6%, rgb(119, 76, 231) 97.9%);
+}
+#result {
+    font-size: 2rem;
+    margin-bottom: 1rem;;
+}
+
+    
+
+
+.circular-progress {
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: #353a64;
+    border-radius: 50%;
+}
+.value-container {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+#scoreDetial  {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    border: solid 1px #fff ;
+    border-radius: 2rem;
+    color: #FFF;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 0.4rem 1.4rem 0 #3381d0;
+}
+#scoreDetial h4 {
+    font-size: 2rem;
+}
+#scoreDetial meter{
+    width: 100%;
+    height: 5vh;
+    border-radius: 1rem;
+    
+}
+.flexBox{
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    color: #FFF;
+}
+.flexBox div{
+    padding: 1.5rem 1rem 1rem 1rem;
+    font-size: 1.5rem;
+    border: solid 1px #fff ;
+    box-shadow: 0 0.4rem 1.4rem 0 #3381d0;
+    width: 100px;
+    height: 100px;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.flexBox div span{
+    background: -webkit-linear-gradient(89.9deg, rgb(255, 90, 109) 2.6%, rgb(119, 76, 231) 97.9%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.fa-crown ,.fa-trophy{
+    color:gold;
+    font-size: 3rem;
+}

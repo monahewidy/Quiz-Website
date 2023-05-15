@@ -1,0 +1,130 @@
+@import url('https://fonts.cdnfonts.com/css/raleway-5');
+:root{
+    background-color: #353a64;
+    font-family: 'Raleway', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+#user-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#user-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-inline: 6px;
+}
+
+header div #logoutBtn{
+    width: auto;
+    padding-inline: 10px;
+    background-color: #559FFF;
+    font-size: 18px;
+    border: none;
+    transition: background-color .3s ease-in-out;
+}
+#logoutBtn:hover{
+    background-color: #3381d0;
+}
+
+h1{
+    font-size: 6rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+@import url('https://fonts.cdnfonts.com/css/cuprum');
+.btn{
+    font-family: 'Cuprum', sans-serif;
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #FFF;
+    background-color: #0093E9;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #3381d0;
+    transform: scale(1.03);
+    transition: transform 150ms;
+}
+.fa-house{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: #fff;
+}
+.goHome{
+    background: linear-gradient(89.9deg, rgb(255, 90, 109) 2.6%, rgb(119, 76, 231) 97.9%);
+}
+#list{
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+#highScoresList{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+#highScoresList li{
+    border: solid 1px #fff ;
+    border-radius: 2rem;
+    color: #FFF;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    box-shadow: 0 0.4rem 1.4rem 0 #3381d0;
+}
+#list h2{
+    border: solid 1px #fff ;
+    border-radius: 2rem;
+    color: #FFF;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    box-shadow: 0 0.4rem 1.4rem 0 gold;
+}

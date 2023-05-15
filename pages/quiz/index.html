@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet"> 
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <main>
+
+      <header>
+        <h1 id="logo">Technical Quiz</h1>
+        <div id="logout">
+          <img id="user-photo" src="" alt="">
+          <span id="user-name"></span>
+          <button id="logoutBtn" class="btn">log out</button>
+        </div>
+      </header>
+
+      <p id="error_msg"></p>
+
+      <div class="settings" id="settings">
+        <div class="titile">
+          <h2 class="headerset" style="text-align: center">Set up your Quiz!</h2>
+        </div>
+        <div class="diff">
+          <h3  class="headerset" for="difficulty">Difficulty</h3>
+          <label class="containerset">Easy
+            <input type="radio" name="radio" id="easy" />
+            <span class="checkmark" style="margin-top: 2px"></span>
+          </label>
+          <label class="containerset">Medium
+            <input type="radio" name="radio" id="medium" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="containerset">Hard
+            <input type="radio" name="radio" id="hard" />
+            <span class="checkmark" style="margin-top: 2px"></span>
+          </label>
+        </div>
+        <div class="cat">
+          <label class="labelset" for="category">Category</label>
+          <select class="selset" name="category" id="category">
+            <option class="set" value="Linux">Linux</option>
+            <option class="set" value="code">Programming</option>
+            <option class="set" value="DevOps">DevOps</option>
+            <option class="set" value="sql">sql</option>
+            <option class="set" value="CMS">CMS</option>
+          </select>
+        </div>
+        <div id="tag">
+          <label class="labelset"  for="tags">tags</label>
+          <select class="selset" name="tags" id="tags">
+            <option class="set" value="BASH">BASH</option>
+            <option class="set" value="Linux">Linux</option>
+            <option class="set" value="Kubernetes">Kubernetes</option>
+          </select>
+        </div>
+        <div class="numb">
+          <label class="labelset" for="questions">Number of questions</label>
+          <input
+            class="inputset"
+            type="number"
+            min="5"
+            step="5"
+            max="20"
+            name="questions"
+            id="questions"
+            placeholder=""
+          />
+        </div>
+        <button id="start" class="btn btn-start">Start</button>
+      </div>
+
+        <div id="load" style="display: none;">
+          <div class="center">
+            <div class="ring"></div>
+            <span>loading...</span>
+         </div>
+        </div>
+
+        <div id="start_quiz" style="display: none;">
+          <div class="quiz_head">
+            <div class="progress_bar">
+              <div class="prog_msg">
+                <i class="ri-rocket-line"></i>
+                <label for="file" id="prog_label"></label>
+              </div>
+              <progress id="prog" value="0" max="20"></progress>
+            </div>
+
+            <div class="time">
+              <i class="ri-alarm-fill"></i><br>
+              <span id="timer"></span>
+            </div>
+          </div>
+            
+            
+            <div class="questionsDiv" id="questionsDiv">
+                      
+            </div>
+            <p id="err" style="color : red"></p>
+
+            <div class="btn_container">
+              <div class="btn_group1">
+                <button class="btn" id="back">back</button>
+                <button class="btn" id="next">next</button>  
+              </div>
+              <button class="btn" id="submit">submit</button>
+            </div>
+        </div>
+
+    </main>
+    <script type="module" src='main.js'></script>
+</body>
+</html>

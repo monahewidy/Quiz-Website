@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <!-- <div class="header-logo">
+
+        </div> -->
+        <div class="header-register">
+            <a href="./pages/register/index.html">sign up</a>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="section-discription">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, repellat excepturi! Quis illum, sed, neque
+                facere natus atque facilis enim porro tempore sequi numquam fugiat rem, quibusdam eum modi error!</p>
+            <div class="btn-container">
+                <button class="btn btn-quiz" onclick="start()">Start Quiz</button>
+                <button class="btn btn-leader" onclick="start()">Leader board</button>
+            </div>
+        </div>
+        <div class="section-photo">
+            <img src="./images/Quiz.png">
+
+        </div>
+    </section>
+    <div class="clear"></div>
+    <script>
+        if (localStorage.getItem('userData')) {
+            window.open("./index2.html", "_self");
+        }
+        function start() {
+            window.open("./pages/register/index.html", "_self");
+        }
+    </script>
+</body>
+
+</html>

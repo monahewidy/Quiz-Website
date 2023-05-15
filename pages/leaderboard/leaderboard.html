@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Leaderboard </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='leaderboard.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1 id="logo">Technical Quiz</h1>
+        <div id="logout">
+          <img id="user-photo" src="" alt="">
+          <span id="user-name"></span>
+          <button id="logoutBtn" class="btn">log out</button>
+        </div>
+      </header>
+
+    <div class="container">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leader board</h1>
+
+            <!--Display all of the highscores-->            
+            <div id="list">
+                <h2><li  class="fa-solid fa-crown"></li>&nbsp;Most active Players&nbsp;<i class="fa-solid fa-trophy"></i></h2>
+                <ul id="highScoresList">
+                </ul>
+            </div>
+
+            <!-- write here the link of game page -->
+            <a href="../quiz/index.html" class="btn">Play Again</a>
+            <!-- need to add home link -->
+            <a href="../../index.html" class="btn goHome">Go Home<i class="fa-solid fa-house"></i></a>
+        </div>
+    </div>
+
+
+<script type="module" src='leaderboard.js'></script>
+
+
+</body>
+</html>

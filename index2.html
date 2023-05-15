@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .header-photo {
+            position: absolute;
+            margin-left: 85%;
+            width: 70px;
+            height: 70px;
+            margin-top: 10px;
+
+        }
+
+        header {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-photo">
+            <img src="" id="photo">
+        </div>
+        <div class="header-register">
+            <a href="./index.html" onclick="logout()">Log out</a>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="section-discription">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, repellat excepturi! Quis illum, sed, neque
+                facere natus atque facilis enim porro tempore sequi numquam fugiat rem, quibusdam eum modi error!</p>
+            <div class="btn-container">
+                <button class="btn btn-quiz" onclick="startQuiz()">Start Quiz</button>
+                <button class="btn btn-leader" onclick="startLeader()">Leader board</button>
+            </div>
+        </div>
+        <div class="section-photo">
+            <img src="./images/Quiz.png">
+
+        </div>
+    </section>
+    <div class="clear"></div>
+
+    <script>
+        var photo = document.getElementById("photo");
+        var url = JSON.parse(localStorage.getItem("userData")).image
+        photo.src = `./images/${url}`
+
+        function startQuiz() {
+            window.open("./pages/quiz/index.html", "_self");
+        }
+
+        function startLeader() {
+            window.open("./pages/leaderboard/leaderboard.html", "_self");
+        }
+
+        function logout() {
+            localStorage.removeItem("userData")
+            photo.style.display = "none"
+        }
+
+    </script>
+
+
+</body>
+
+</html>
